@@ -1,0 +1,131 @@
+
+<html>
+    <head>  
+        <link rel="stylesheet"  href="home.css">
+        <link href="http://fonts.cdnfonts.com/css/league-spartan" rel="stylesheet">
+
+    </head>
+    <body>
+      <nav class="navigation">
+        <div>
+            <img src="../imgs/logo1.png">
+            <span>
+                <p>
+                    FCAI
+                </p>
+                <p>
+                    LAB TRACKER
+                </p>
+            </span>
+        </div>
+        <a href="../home/home.html">Home</a>
+        <a href="../dashboard/dashBoard.html">DashBoard</a>
+        <a href="../Search/Search.html">Search</a>
+        <a href="../Broken/Broken.html">Broken</a>
+        <a href="../Report/Report.html">Report</a>
+        <a href="../FAQ/FAQ.html">FAQ</a>
+    </nav>
+
+      <div><h1 style="text-align: center; margin-top: 10px;">welcome to Lab Tracter website </h1></div>
+      <div style="margin-left: 250px; ">
+        <h2 >the recent news </h2>
+        <div class="news_1">there is an update in labs schelde  </div>
+        <div class="news_1">There is a vacancy as lab supervisor ,To apply please check the following link:<a href="">here</a></div>
+        <div class="news_1">There are vacant places to volunteer for lab activities, To apply please inform the instructor </div>
+      </div>
+      <div id="dropdown_table1">
+          <button onclick="show_labtable()" id="lab_info"  class="info">show lab information</button>
+		  <table class="table" id="open1" >
+            <thead>
+              <tr>
+                <th >LAB ID</th>
+                <th >LAB NAME</th>
+                <th >LAB BUILDING</th>
+                <th >LAB FLOOR NUMBER</th>
+                <th >LAB PCS COUNT</th>
+                <th>LAB STATUS</th>
+              </tr></thead>
+          <tbody id="mytable"></tbody>
+          </table>
+        
+      </div>
+      <div id="dropdown_table2">
+        <button onclick="show_pcstable()"  id="pcs_info"  class="info">show pcs info</button>
+		<table class="table" id="open2">
+            <thead><tr>
+            <th>PCs LAB ID</th>
+            <th>PCs ID</th>
+            <th>PC STATUS</th>
+            <th>COMMENT</th>
+          </tr></thead>
+          <tbody id="mytable1"></tbody>
+          </table>
+            
+      </div>
+      <div>
+        <div id="complain" >
+          <h1 style="text-align: center; ">FILL A COMPLAINT</h1>
+          <label><p>FULL NAME:</p></label>
+          <input type="text" name="name" class="input_info" placeholder="enter your full name..." maxlength="50" minlength="20" required="" >
+          <label><p>ID:</p></label>  
+          <input type="text" name="ID" class="input_info" placeholder="enter your ID..." maxlength="8"  minlength="8" required="">
+          <label><p>complaint</p></label>
+          <textarea rows="4"name="comlaint" id="complaint" placeholder="enter your complaint..."  required=""></textarea>
+          <lable><p>submit your complaint</p></lable>
+          <input  type="submit" value="fill a complaint" id="submit_complaint"/>
+        </div>
+      </div>
+      <footer>
+        <span>
+            <label>
+                Phone Number:
+            </label>
+            <p>
+                +20233350178
+            </p>
+        </span>
+        <span>
+            <label>
+                Email Address:
+            </label>
+            <p>
+                webadmin@fci-cu.edu.eg
+            </p>
+        </span>
+        <span>
+            <label>
+                Address:
+            </label>
+            <p>
+                 5 Dr. Ahmed Zewail Street, Orman, Giza, Egypt
+            </p>
+        </span>
+    <div id="logo-text">
+        <img src="../imgs/logo1.png">
+        <span>
+            <p>
+                FCAI
+            </p>
+            <p>
+                Lab Tracker
+            </p>
+          </span>
+        </div>
+      </footer>
+      </body>
+      <script type="text/javascript" src="home.js"></script>	  
+	<script>
+		function myFunction() {
+            let name = document.querySelector(".input_info[name=name]")
+            let Id = document.querySelector(".input_info[name=ID]")
+            let complaint = document.querySelector("#complaint")
+            let url = `https://mail.google.com/mail/?view=cm&ui=2&tf=0&fs=1&to=${encodeURIComponent('marwanmarwan536@gmail.com')}
+&su=${encodeURIComponent("Lab Compliants")}&body=${encodeURIComponent(`Hello, my name is ${name.value}!
+ my ID is ${Id.value}
+  ${complaint.value}`)}`
+    window.open(url, "_blank").focus();
+			}
+            document.getElementById("submit_complaint").addEventListener('click',myFunction);
+	</script>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="./broken_style.css" />
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <div>
+        <img src="../imgs/logo.png" />
+        <span>
+          <p>FCAI</p>
+          <p>LAB TRACKER</p>
+        </span>
+      </div>
+            <a href="../home/home.html">Home</a>
+            <a href="../dashBoard/dashBoard.html">DashBoard</a>
+            <a href="../Search/Search.html">Search</a>
+            <a href="../Broken/Broken.html">Broken</a>
+            <a href="../Report/Report.html">Report</a>
+            <a href="../FAQ/FAQ.html">FAQ</a>
+    </nav>
+
+    <h1>List Of Broken PCs</h1>
+
+    <div class="input">
+      <form id="form">
+        <label for="btn">Enter PC No.</label>
+        <input id="input" type="text" required />
+        <button id="btn--click">Change Status</button>
+      </form>
+    </div>
+    <table class="container">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Computer ID</th>
+          <th>Lab ID</th>
+          <th>Status</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <footer>
+      <span>
+        <label> Phone Number: </label>
+        <p>+20233350178</p>
+      </span>
+      <span>
+        <label> Email Address: </label>
+        <p>webadmin@fci-cu.edu.eg</p>
+      </span>
+      <span>
+        <label> Address: </label>
+        <p>5 Dr. Ahmed Zewail Street, Orman, Giza, Egypt</p>
+      </span>
+      <div id="logo-text">
+        <img src="../imgs/logo.png" />
+        <span>
+          <p>FCAI</p>
+          <p>Lab Tracker</p>
+        </span>
+      </div>
+    </footer>
+  </body>
+  <script src="./broken.js"></script>
+</html>

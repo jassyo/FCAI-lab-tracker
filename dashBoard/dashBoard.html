@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styledash.css">
+    <link rel="icon" type="image/x-icon" href="images/dashboard.png" />
+    <title>DashBoard</title>
+  </head>
+  <body>
+      <nav class="navigation">
+        <div class="logo">
+            <img src="../imgs/logo1.png">
+            <span>
+                <p>
+                    FCAI
+                </p>
+                <p>
+                    Lab Tracker
+                </p>
+            </span>
+        </div>
+        <a href="../home/home.html">Home</a>
+        <a href="../dashboard/dashBoard.html">DashBoard</a>
+        <a href="../Search/Search.html">Search</a>
+        <a href="../Broken/Broken.html">Broken</a>
+        <a href="../Report/Report.html">Report</a>
+        <a href="../FAQ/FAQ.html">FAQ</a>
+    </nav>
+    <main>
+    <div class="personl">
+      <div class="pic">
+        <img
+          src="images/profile.png"
+          alt="Profile Picure"
+          width="250"
+          height="250"
+        />
+      </div>
+      <h1>Personal Information</h1>
+      <div id="P_info">
+          <div>
+              <label>Job Title:</label>
+              <input type="text" id="title_input" required value="" readonly></input>
+          </div>
+          <div>
+              <label id="name">Name:</label>
+              <input type="text" id="name_input" required value="" readonly></input>
+          </div>
+          <div>
+            <label id="mail">Email:</label>
+            <input type="email" id="mail_input" required  value="" readonly></input>
+        </div>
+          <div>
+              <label id="id">ID:</label>
+              <input type="text" id="id_input" required value="" readonly></input>
+          </div>
+          <button type="button" id="chBtn">Change Info </button>
+            
+      </div>
+
+        </main>
+        <h2>You Can</h2>
+<section class="cards" id="services">
+  <div class="content">
+      
+    <a href="../Edit/Edit.html?type=l"><div class="card">
+          <div class="icon">
+            <img src="images/add.png" width="150" height="150">
+          </div>
+          <div class="info">
+            <h3>Add Lab</h3>
+          </div>
+      </div></a>
+      <a href="../Edit/Edit.html?type=p"><div class="card">
+          <div class="icon">
+            <img src="images/add.png" width="150" height="150">
+          </div>
+          <div class="info">
+            <h3>Add PC</h3>
+          </div>
+      </div></a>
+      <a href="../Report/Report.html"><div class="card">
+          <div class="icon">
+            <img src="images/add.png" width="150" height="150">
+          </div>
+          <div class="info">
+              <h3>Report</h3>
+          </div>
+      </div></a>
+  </div>
+</section>
+<footer>
+  <span>
+      <label>
+          Phone Number:
+      </label>
+      <p>
+          +20233350178
+      </p>
+  </span>
+  <span>
+      <label>
+          Email Address:
+      </label>
+      <p>
+          webadmin@fci-cu.edu.eg
+      </p>
+  </span>
+  <span>
+      <label>
+          Address:
+      </label>
+      <p>
+           5 Dr. Ahmed Zewail Street,Orman, Giza, Egypt
+      </p>
+  </span>
+<div id="logo-text">
+  <img src="./images/logo1.png">
+  <span>
+      <p>
+          FCAI
+      </p>
+      <p>
+          Lab Tracker
+      </p>
+  </span>
+</div>
+</footer>
+  </body>
+    <script src="dashBoard.js"></script>
+</html>
